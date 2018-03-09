@@ -4,32 +4,35 @@
 
 header {
     position: fixed;
-    height:70px;
+    height: 70px;
     width: 100%;
-    background-color:black;
+    background-color: black;
     z-index: 1000;
     padding: 3em;
     outline: none;
-
 }
 
 
 /* Wide Menu */
-.links-wrapper{
-  visibility: hidden;
+
+.links-wrapper {
+    visibility: hidden;
 }
+
 /* Wide Menu */
 
 /* SVG Icon */
 
 #triangle {
-         position: fixed;
-         top:0%; left:0%;
-         list-style: none;
-         background:black; width:120px;
-         height:70px;
-         transform-origin: 50% 50%;
-         animation: rotate 10s linear infinite;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    list-style: none;
+    background: black;
+    width: 120px;
+    height: 70px;
+    transform-origin: 50% 50%;
+    animation: rotate 10s linear infinite;
 }
 
 svg polygon {
@@ -46,12 +49,13 @@ svg polygon {
 /* SVG Icon */
 
 /* Mobile Menu */
+
 .menu {
 
     position: absolute;
     top: 0%;
     right: 0%;
-    height:70px;
+    height: 70px;
     width: 60px;
     cursor: pointer;
 }
@@ -131,22 +135,23 @@ svg polygon {
 }
 
 .overlay-content {
-      position:fixed;
-      top:70px;
-      background-color: black;
-      display: none;
-      text-align: center;
-      width:100%;
-      height: 100%;
-      padding:2em;
-     overflow-y: scroll;
+    position: fixed;
+    top: 70px;
+    background-color: black;
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    overflow-y: scroll;
 }
+
 .overlay-content::-webkit-scrollbar {
     display: none;
 }
 
 .overlay-links {
-     padding:3em;
+    padding: 3em;
 }
 
 .overlay-links .link {
@@ -158,423 +163,274 @@ svg polygon {
     font-size: 15px;
     letter-spacing: 2px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 /* Moile Menu */
 
 /* Banner  */
+
 .banner {
 
     width: 100%;
-    height:100%;
+    height: 100%;
     background-image: url('https://static.pexels.com/photos/574111/pexels-photo-574111.jpeg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: local;
 }
-.banner-tagline{
+
+.banner-tagline {
     position: relative;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height:100%;
-  }
-
-.banner-tagline h2{ font-family: 'Lato', sans-serif; font-kerning: normal;font-variant:small-caps;font-weight: 900; }
-
-.tagline{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: white;
-  font-size:4em;
-  font-family: 'Advent Pro', sans-serif;
-}
-/* Banner  */
-
-.external2{
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+}
+
+.banner-tagline h2 {
+    font-family: 'Lato', sans-serif;
+    font-kerning: normal;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+.tagline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+/* Banner  */
+
+.section1 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 0em;
+}
+
+.story_child1 {
+    width: 100%;
+    height:auto;
+    padding:1.5em;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+.story_child1 h1 {
+    padding: .5em;
+    font-family: 'Lato', sans-serif;
+    font-size:2em;
+    font-weight: bolder;
+    font-kerning: normal;
+    font-variant: small-caps;
+
+}
+
+.story_child1 p {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.story_child_img {
+    width: 100%;
+    height: 350px;
+    background-image: url('https://cdn.artbees.net/jupiter/danae/wp-content/uploads/sites/170/2017/02/home-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+.section2 {
+
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-size: cover;
+}
+
+.section3 {
+    padding: 1.5em;
+    width: 100%;
+    height:auto;
     background-color: black;
 }
 
-.external3{
-
-        width: 100%;
-        height:100%;
-        background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
-        background-size: cover;
-    }
-
-.external1{
-
-            width: 100%;
-            height:auto;
-            background-color: black;
-        }
-
-.tagline2{
-      text-align: center;
-      color: white;
-      font-size:2.5em;
-      padding:3em 1em;
-      font-family: 'Advent Pro', sans-serif;
-    }
-.tagline1{
+.tagline1 {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size:2.5em;
+    font-size: 2.5em;
     font-family: 'Advent Pro', sans-serif;
 }
-.meter{
-  display: flex;
-  flex-direction: column;
-  text-align:center;
+
+
+
+.meter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-.food-menu1{
-        list-style: none;
+
+.food-menu1 {
+    list-style: none;
 
 }
-.food-menu1 li{
+
+.food-menu1 li {
     font-size: .9em;
-    letter-spacing:.1em;
+    letter-spacing: .1em;
     font-family: 'Lato', sans-serif;
-    padding: 1em 0;
-    color: white
-
+    padding: 1.5em 0;
+    color: white;
 }
-.food-menu1 h1{
+
+.food-menu1 h1 {
     font-size: 2em;
 }
-.food_menu_btn{
-  padding: 4em;
+
+.food_menu_btn {
+    padding: 1em 4em;
 }
-.food_menu_btn h1{
-  padding: 1em;  font-family: 'Lato', sans-serif;
-  text-align: center;
-  background-color: white;
+
+.food_menu_btn h1 {
+    padding: 1em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: white;
 }
-.about{
+
+.about {
     width: 100%;
     height: 500px;
 
 }
 
-.slide-class{
+.slide-class {
 
-        width:100%;
-        height:400px;
-        margin: 0;
-        padding: 0;
-}
-
- img{
-        width:100%;
-        height:400px;
-        margin: 0;
-    }
-
-/* Desiging scroll Bar */
-::-webkit-scrollbar{
-  width:3px;
-
-}
-::-webkit-scrollbar-thumb{
-
-  background-color:rgb(255,255,255);
-
-}
-::-webkit-scrollbar-track{
-
-  background-color:rgb(0,0,0)	;
-
-}
-/* Desiging scroll Bar */
-
-
-.story{
-       width: 100%;
-       height:auto;
-       background-color:white;
-       padding: 0em;
-}
-
-.story_child1{
-
-   width: 100%;
-   height: 350px;
-   padding:1em;
-   margin: 0em;
-   text-align: center;
-   background-color: black;
-   color: white;
-
-}
-
-.story_child1 h1{
-      padding: 1em;
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      font-weight: bolder;
-      font-kerning: normal;
-      font-variant: small-caps;
-
-}
-
-.story_child1 p{
-    padding:0em;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 1.5em;
-  }
-
-.story_child_img{
     width: 100%;
-    height: 350px;
-    background-image: url('https://cdn.artbees.net/jupiter/danae/wp-content/uploads/sites/170/2017/02/home-02.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: local;
+    height: 400px;
+    margin: 0;
+    padding: 0;
 }
 
+img {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+
+
+.section4{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.section5 {
+    width: 100%;
+    height: 80%;
+    background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-size: cover;
+}
+.section6{
+  width: 100%;
+  height: 70%;
+  background-color: black;
+}
+/* Desiging scroll Bar */
+
+::-webkit-scrollbar {
+    width: 3px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+::-webkit-scrollbar-track {
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+/* Desiging scroll Bar */
 
 /* Footer Start */
-.border{
-       width: 80%;
-       margin: auto;
-       border-top: 1px solid #595959;;
+
+.border {
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid #595959;
+    ;
 }
 
-.svg-icon{
-      width: 50px;
-      height:40px; color: white; fill:white;
+.svg-icon {
+    width: 50px;
+    height: 40px;
+    color: white;
+    fill: white;
 }
 
-.footer{
-        width: 100%;
-        height:auto;
-        background-color: black;
-        padding:5em  0;
-
-}
-
-.footer-wrapper{
-        margin: 0em ;
-        width: 100%;
-        height:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-around;
-
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 1.5em;
 
 }
 
-.footer-wrapper1{
-       width:100%;
-       height:300px;
-       padding: 2em;
-       text-align: center;
+.footer-wrapper {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 
 }
 
-.footer-wrapper1 h1{
-          font-family: 'Lato', sans-serif;
-          font-size: 20px;
-          padding: 1em;
-          color: white;
-  }
+.footer-wrapper1 {
+    width: 100%;
+    height: 300px;
+    padding: 1.5em;
+    text-align: center;
 
-.footer-wrapper1 h2{
-      font-family: 'Lato', sans-serif;
-      font-size: 15px;
-      padding: 1em;
-      font-weight: bolder;
-     color: white;
-    }
+
+}
+
+.footer-wrapper1 h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 1em;
+    color: white;
+}
+
+.footer-wrapper1 h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 1em;
+    font-weight: bolder;
+    color: white;
+}
 
 .footer-wrapper1 p {
-        font-family: sans-serif;
-        font-size: 15px;
-        padding: 1em;
-        color: rgb(42, 41, 39);
-        line-height: 1.5em;
-      }
-
-
-/* Footer End */
-
-@media(min-width:760px) {
-
-            .external{
-
-                  width: 100%;
-                  height:100%;
-                  background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
-                  background-size:   100% ;
-              }
-            .story{
-              height:90%;
-              display: flex;
-              flex-direction: row;
-              justify-content:space-around;
-            }
-            .story_child1{
-               width: 100%;
-               height:100%;
-                padding:10em 2em;
-
-            }
-            #triangle {
-                     position: fixed;
-                     top:0%; left: 3%;
-                     width:150px;
-                     height:90px;
-
-                   }
-
-            header{
-              height:90px; background-color: transparent;
-            }
-
-            .menu {
-                    display: none;
-                }
-                 /*important */
-
-            .overlay-content {
-                      visibility: hidden;
-                } /*important */
-
-            .links-wrapper {
-                  display: flex;
-                  justify-content:flex-end;
-                  height: 90px;
-                  overflow: hidden;
-                  margin: auto;
-                  visibility:visible;
-                  list-style: none;
-            }
-
-            .links {
-
-                  padding:2.5em 1.5em;
-                  display: inline-block;
-                  text-decoration: none;
-                  color:white;
-                  font-weight: 900;
-                  font-size:1em;
-                  font-family: 'Lato', sans-serif;
-                  font-variant: small-caps;
-                  letter-spacing: 3px;
-
-            }
-
-            .links:active, .links:visited{
-              color:blue;
-            }
-            .links::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 2px;
-                margin: .5em 0;
-                background:#A9A9A9;
-                transition: width .3s;
-            }
-
-            .links:hover::after {
-                width: 100%;
-                 transition: width .3s;
-            }
-
-
-            .about{
-                width: 100%;
-                 height: 500px;
-                 display: flex;
-                 justify-content: center;
-              }
-
-            .slide-class{
-
-                    background: red;
-                    width: 80%;
-                    height:400px;}
-
-            .text1, .text2, .text3{  width: 100%; height:400px;}
-
-            .text1{ background-image: url(img/5.jpeg); background-position: center;background-size: cover;  }
-            .text2{ background-image: url(img/2.jpeg);  background-position: center;background-size: cover; }
-            .text3{ background-image: url(img/3.jpeg); background-position: center;background-size: cover; }
-            .external1{
-                        width: 100%;
-                        height:auto;
-                    }
-
-            .tagline2{
-                              position: absolute;
-                              top:20%;
-                              left:50%;
-                              transform: translate(-50%,-50%);
-                              color: white;
-                              font-size:3em;
-                              font-family: 'Advent Pro', sans-serif;
-                            }
-              .meter{
-                          display: flex;
-                          flex-direction: row;
-                          text-align:center;
-                          padding: 15em 0 0  0;
-                    }
-            .food-menu1{
-                      width: 50%;
-                      height:auto;
-                      list-style: none;
-                      padding: 2em;
-
-            }
-            .food-menu1 li{
-                    font-size:1em;
-                    padding: 1em 0;
-                    color: white;
-            }
-            .food-menu1 h1{
-                    font-size: 2em;
-            }
-            .food_menu_btn{
-                    padding: 1em 35em  2em 35em;
-            }
-            .food_menu_btn h1{
-                    padding:.4em;
-                    font-size: 1.5em;
-
-            }
-        /* Footer Start */
-            .border{
-                width: 100%;
-                border-top: 1px solid #595959;;
-               }
-            .footer{
-                    height: 600px;
-                    padding:4em ;
-            }
-            .footer-wrapper{
-                    margin:5em 0;
-                    width: 100%;
-                    height:auto;
-                    display:flex;
-                    flex-direction: row;
-                    justify-content:space-around;
-
-
-            }
-            .footer-wrapper1{
-                   width: 300px;
-
-            }
-        /* Footer End */
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 1em;
+    color: rgb(42, 41, 39);
+    line-height: 1.5em;
+}
