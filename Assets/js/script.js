@@ -22,14 +22,17 @@ $('#menu').on('click', function(){
 
  $(document).ready(function(){
   $('.slide-class').slick({
-     arrows: true,
-    dots: true,
+    dots:false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed:1500,
     responsive:true,
+    loop:true,
+    swipe:true,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
     adaptiveHeight: false
   });
 });
