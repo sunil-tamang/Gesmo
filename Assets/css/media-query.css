@@ -81,17 +81,23 @@
     }
 
     .circle-container{
-        width: auto;
-        display:flex;
-        flex-direction:row;
-        justify-content: center;
+
+      flex-direction:row;
+
 
     }
-    .circle{
-      display:block;
-        margin: 15em auto;
+    .circle-svg-icon{
 
+          width:7em;
+          height:7em;
     }
+    .circle h1{
+      font-size: 3em;
+    }
+
+    .green{fill:rgb(38, 231, 14);}
+
+
 
     .section3 {
         width: 100%;
