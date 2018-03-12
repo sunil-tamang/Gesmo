@@ -168,6 +168,9 @@ svg polygon {
 
 /* Moile Menu */
 
+
+
+
 /* Banner  */
 
 .banner {
@@ -179,6 +182,9 @@ svg polygon {
     background-repeat: no-repeat;
     background-attachment: local;
 }
+
+
+
 .banner1 {
 
     width: 100%;
@@ -188,12 +194,15 @@ svg polygon {
     background-repeat: no-repeat;
     background-attachment: local;
 }
+
+
 .banner-tagline {
     position: relative;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 }
+
 
 .banner-tagline h2 {
     font-family: 'Lato', sans-serif;
@@ -213,6 +222,9 @@ svg polygon {
 }
 
 /* Banner  */
+
+
+/* Section 1  */
 
 .section1 {
     width: 100%;
@@ -257,6 +269,9 @@ svg polygon {
     background-attachment: local;
 }
 
+
+
+/* Section 2  */
 .section2 {
 
     width: 100%;
@@ -264,14 +279,28 @@ svg polygon {
     background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
     background-size: cover;
 }
-
-.section3 {
-    padding: 1.5em;
-    width: 100%;
-    height:auto;
-    background-color: black;
+.circle-container{
+    width: auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 1em;
 }
+.circle{
+  display: block;
+  margin: 2em auto;
+  background-color:transparent;
+  text-align: center;
+}
+.circle-svg-icon{
 
+      width: 80px;
+      height: 80px;
+      color: white;
+      fill:white;
+
+}
+.green{fill:rgb(38, 231, 14);}
 .tagline1 {
     position: absolute;
     top: 50%;
@@ -284,6 +313,13 @@ svg polygon {
 
 
 
+/* Section 3  */
+.section3 {
+    padding: 1.5em;
+    width: 100%;
+    height:auto;
+    background-color: black;
+}
 .meter {
     display: flex;
     flex-direction: column;
@@ -321,19 +357,25 @@ svg polygon {
 
 
 
+/* About */
+
     .about {
         background-color: black;
         width: 100%;
         height:auto;
-        padding:1.5em;
+        padding:1em;
         display: flex;
         justify-content: center;
     }
 
     .slide-class {
-        background-color: transparent;
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
+      background-image: url('https://static.pexels.com/photos/574111/pexels-photo-574111.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: local;
+
     }
     .text1,  .text2, .text3 {
         width:100%;
@@ -358,18 +400,19 @@ svg polygon {
     }
 */
 i{color: white; cursor: pointer;}
-.prev{
-      height: 50px;
-      position:relative;
 
+.prev{
+      height: 50;
+      position:relative;
       border: 0;
       outline: none;
       left:10%;
+      top:50%;
       z-index:3;
       background-color:transparent;
 }
 .next{
-      height: 50px;
+      height: 50;
       position:relative;
       border: 0;
       outline: none;
@@ -377,22 +420,36 @@ i{color: white; cursor: pointer;}
       z-index:3;
       background-color:transparent;
 }
+
+
+
+
 .section4{
   width: 100%;
   height: 100%;
   background-color: black;
 }
+
+
+
+
 .section5 {
     width: 100%;
     height: 80%;
     background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
     background-size: cover;
 }
+
+
+
 .section6{
   width: 100%;
   height: 70%;
   background-color: black;
 }
+
+
+
 /* Desiging scroll Bar */
 
 ::-webkit-scrollbar {
@@ -416,25 +473,12 @@ i{color: white; cursor: pointer;}
 
 /* Footer Start */
 
-.border {
-    width: 80%;
-    margin: auto;
-    border-top: 1px solid #595959;
-    ;
-}
-
-.svg-icon {
-    width: 50px;
-    height: 40px;
-    color: white;
-    fill: white;
-}
 
 .footer {
     width: 100%;
-    height: auto;
+    height:auto;
     background-color: black;
-    padding: 1.5em;
+    padding: 2em;
 
 }
 
@@ -456,6 +500,20 @@ i{color: white; cursor: pointer;}
     text-align: center;
 
 
+}
+
+.border {
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid #595959;
+    ;
+}
+
+.svg-icon {
+    width: 50px;
+    height: 40px;
+    color: white;
+    fill: white;
 }
 
 .footer-wrapper1 h1 {
