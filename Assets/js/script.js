@@ -38,22 +38,24 @@ $('#menu').on('click', function(){
 });
 
 
-// Parallax Effect
+if ($(window).width() > 650) {
 
-(function(){
+  // Parallax Effect
+  var parallax = document.querySelectorAll(".parallax"),
+      speed =0.7;
 
-var parallax = document.querySelectorAll(".parallax"),
-    speed =0.7;
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
 
-window.onscroll = function(){
-  [].slice.call(parallax).forEach(function(el,i){
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
 
-    var windowYOffset = window.pageYOffset,
-        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+      el.style.backgroundPosition = elBackgrounPos;
 
-    el.style.backgroundPosition = elBackgrounPos;
+    });
+  };
 
-  });
-};
+}
+else {
 
-})();
+}
