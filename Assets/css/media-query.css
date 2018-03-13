@@ -86,13 +86,24 @@
 
 
     }
+    .circle{
+            width: 270px;
+            height: 270px;
+            text-align: center;
+            margin:auto;
+            padding:2em;
+            border-radius: 50%;
+            text-align: center;
+
+
+    }
     .circle-svg-icon{
 
           width:7em;
           height:7em;
     }
     .circle h1{
-      font-size: 3em;
+      font-size: 2em;
     }
 
     .green{fill:rgb(38, 231, 14);}
@@ -121,7 +132,6 @@
         text-align: center;
         padding:0;
     }
-
 
 
 .food-menu1 {
@@ -154,7 +164,7 @@
 
 
   .footer{
-        padding: 10em 2em;
+        padding: 10em 2em 2em  2em;
   }
     .footer-wrapper {
 
@@ -172,7 +182,12 @@
     }
   .border {
         width: 80%;
-        border-top: 1px solid #595959;
+
+
+  }
+  .border1 {
+      width:50%;
+
 
   }
     /* Footer End */

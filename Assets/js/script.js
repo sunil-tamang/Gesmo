@@ -59,3 +59,7 @@ if ($(window).width() > 650) {
 else {
 
 }
+
+
+//Smoooth Mouse scroll
+jQuery.scrollSpeed(100, 800);
