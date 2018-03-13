@@ -45,6 +45,7 @@ if ($(window).width() > 650) {
       speed =0.7;
 
   window.onscroll = function(){
+
     [].slice.call(parallax).forEach(function(el,i){
 
       var windowYOffset = window.pageYOffset,

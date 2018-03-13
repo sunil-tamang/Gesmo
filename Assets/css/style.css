@@ -169,9 +169,6 @@ svg polygon {
 
 /* Moile Menu */
 
-
-
-
 /* Banner  */
 
 .banner {
@@ -211,6 +208,8 @@ svg polygon {
     font-kerning: normal;
     font-variant: small-caps;
     font-weight: 900;
+    font-size: 2em;
+
 }
 
 .tagline {
@@ -219,12 +218,12 @@ svg polygon {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4em;
+    text-align: left;
     font-family: 'Advent Pro', sans-serif;
+
 }
 
 /* Banner  */
-
 
 /* Section 1  */
 
@@ -237,8 +236,8 @@ svg polygon {
 
 .story_child1 {
     width: 100%;
-    height:auto;
-    padding:1.5em;
+    height: auto;
+    padding: 1.5em;
     text-align: center;
     background-color: black;
     color: white;
@@ -248,7 +247,7 @@ svg polygon {
 .story_child1 h1 {
     padding: .5em;
     font-family: 'Lato', sans-serif;
-    font-size:2em;
+    font-size: 2em;
     font-weight: bolder;
     font-kerning: normal;
     font-variant: small-caps;
@@ -274,56 +273,64 @@ svg polygon {
 
 
 /* Section 2  */
+
 .section2 {
 
-          width: 100%;
-          height: 100%;
-          background-image: url('https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
-          background-size: cover;
-          background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-size: cover;
+    background-position: center;
 }
-.circle-container{
-          width: 100%;
-          height: 100%;
-          display:flex;
-          flex-direction:column;
-          justify-content: center;
-          position: absolute;
-          top: 50%;
-          left: 40%;
-          transform: translate(-40%, -50%);
+
+.circle-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
 }
-.circle{
-        width: 150px;
-        height: 150px;
-        text-align: center;
-        margin:auto;
-        padding:1em;
-        border-radius: 50%;
-        background-color:white;
-        text-align: center;
+
+.circle {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
 
 
 }
-.circle h1{
-  padding: 1em 0;
-  color:black;
-  font-size: 1em;
-  font-family: 'Lato', sans-serif;
-  font-kerning: normal;
-  font-variant: small-caps;
-  font-weight: 900;
-}
-.circle-svg-icon{
 
-      width: 4em;
-      height: 4em;
-      color: white;
-      fill:green;
-      font-weight: 100;
+.circle h1 {
+    padding: 1em 0;
+    color: black;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    font-kerning: normal;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+.circle-svg-icon {
+
+    width: 4em;
+    height: 4em;
+    color: white;
+    fill: rgb(38, 231, 14);
+    font-weight: 100;
 
 }
-.green{fill:rgb(38, 231, 14);}
+
+.green {
+    fill: rgb(38, 231, 14);
+}
 
 .tagline1 {
     position: absolute;
@@ -338,12 +345,14 @@ svg polygon {
 
 
 /* Section 3  */
+
 .section3 {
     padding: 1.5em;
     width: 100%;
-    height:auto;
-    background-color:black;
+    height: auto;
+    background-color: black;
 }
+
 .meter {
     display: flex;
     flex-direction: column;
@@ -362,17 +371,18 @@ svg polygon {
     padding: 1.5em 0;
     color: white;
 }
-.menu-btn{
-  font-size: 1em;
-  letter-spacing: .1em;
-  font-family: 'Marck Script', cursive;
-  padding: 1em 3em ;
-  color: white;
-  background-color:transparent;
-  border: 1px solid white;
-  outline: none;
-  display: block;
-  margin: 1em auto;
+
+.menu-btn {
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-family: 'Marck Script', cursive;
+    padding: 1em 3em;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    display: block;
+    margin: 1em auto;
 
 }
 
@@ -396,29 +406,32 @@ svg polygon {
 
 /* About */
 
-    .about {
-        background-color: black;
-        width: 100%;
-        height:auto;
-        padding:1em;
-        display: flex;
-        justify-content: center;
-    }
+.about {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
 
-    .slide-class {
-      width: 100%;
-      height: auto;
-      outline: none;
-      background-image: url('https://static.pexels.com/photos/574111/pexels-photo-574111.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: local;
+.slide-class {
+    width: 100%;
+    height: auto;
+    outline: none;
+    background-image: url('https://static.pexels.com/photos/574111/pexels-photo-574111.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
 
-    }
-    .text1,  .text2, .text3 {
-        width:100%;
-        height:400px;
-    }
+}
+
+.text1,
+.text2,
+.text3 {
+    width: 100%;
+    height: 400px;
+}
 
 /*
    .text1 {
@@ -437,35 +450,40 @@ svg polygon {
         background-size: cover;
     }
 */
-i{color: white; cursor: pointer;}
 
-.prev{
-      height: 50;
-      position:relative;
-      border: 0;
-      outline: none;
-      left:10%;
-      top:50%;
-      z-index:3;
-      background-color:transparent;
-}
-.next{
-      height: 50;
-      position:relative;
-      border: 0;
-      outline: none;
-      right:10%;
-      z-index:3;
-      background-color:transparent;
+i {
+    color: white;
+    cursor: pointer;
 }
 
+.prev {
+    height: 50;
+    position: relative;
+    border: 0;
+    outline: none;
+    left: 10%;
+    top: 50%;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.next {
+    height: 50;
+    position: relative;
+    border: 0;
+    outline: none;
+    right: 10%;
+    z-index: 3;
+    background-color: transparent;
+}
 
 
 
-.section4{
-  width: 100%;
-  height: 100%;
-  background-color: red;
+
+.section4 {
+    width: 100%;
+    height: 100%;
+    background-color:black;
 }
 
 
@@ -480,10 +498,10 @@ i{color: white; cursor: pointer;}
 
 
 
-.section6{
-  width: 100%;
-  height: 70%;
-  background-color: black;
+.section6 {
+    width: 100%;
+    height: 70%;
+    background-color: black;
 }
 
 
@@ -509,12 +527,13 @@ i{color: white; cursor: pointer;}
 
 /* Desiging scroll Bar */
 
-/* Footer Start */
 
+
+/* Footer Start */
 
 .footer {
     width: 100%;
-    height:auto;
+    height: auto;
     background-color: black;
     padding: 2em;
 
@@ -547,8 +566,9 @@ i{color: white; cursor: pointer;}
     border-top: 1px solid #595959;
 
 }
+
 .border1 {
-    width:70%;
+    width: 70%;
     margin: auto;
     border-top: 1px solid #595959;
 
