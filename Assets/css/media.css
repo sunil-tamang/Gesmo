@@ -9,8 +9,8 @@
 
     }
 
-    header {
-
+    .header {
+        padding:1em;
         height: 90px;
         background-color: transparent;
     }
@@ -18,14 +18,15 @@
     .menu {
         display: none;
     }
+
     /*important */
     .overlay-content {
         visibility: hidden;
     }
-    /*important */
-    .links-wrapper {
+
+ .links-wrapper {
         display: flex;
-        justify-content: flex-end;
+        justify-content:flex-end;
         height: 90px;
         overflow: hidden;
         margin: auto;
@@ -33,7 +34,7 @@
         list-style: none;
     }
 
-    .links {
+.links {
 
         padding: 2.5em 1.5em;
         display: inline-block;
@@ -47,11 +48,11 @@
 
     }
 
-    .links:active,
-    .links:visited {
+.links:active, .links:visited {
         color: blue;
     }
-    .links::after {
+
+.links::after {
         content: '';
         display: block;
         width: 0;
@@ -61,32 +62,32 @@
         transition: width .3s;
     }
 
-    .links:hover::after {
+.links:hover::after {
         width: 100%;
         transition: width .3s;
     }
 
 
-    .section1 {
+.section1 {
         height: 80%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .story_child1 {
+
+.story_child1 {
         width: 100%;
         height: 100%;
         padding: 3em;
 
     }
-
-    .circle-container {
+.circle-container {
 
         flex-direction: row;
 
 
     }
-    .circle {
+.circle {
         width: 230px;
         height: 230px;
         text-align: center;
@@ -98,158 +99,115 @@
 
 
     }
-    .circle-svg-icon {
+.circle-svg-icon {
 
         width: 5em;
         height: 5em;
     }
-    .circle h1 {
+.circle h1 {
         font-size: 2em;
     }
 
-    .green {
+.green {
         fill: rgb(38, 231, 14);
     }
 
 
 
-    .section3 {
-        width: 100%;
-        height: auto;
-        padding: 8em 5em;
-    }
+.banner-tagline h2 {
 
-    .tagline2 {
-        position: absolute;
-        top: 0%;
-        padding: 1em;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 3em;
-        background-color:black;
-        font-family: 'Advent Pro', sans-serif;
-    }
-
-    .tagline p {
-        font-size: 1em;
-        letter-spacing: .1em;
-        padding: 1em;
-    }
-
-    .banner-tagline h2 {
-        font-family: 'Lato', sans-serif;
-        font-kerning: normal;
-        font-variant: small-caps;
-        font-weight: 900;
-        font-size: 4em;
+        font-size:4em;
         padding: .5em 0;
-        text-align: center;
+
 
     }
-    .meter {
+
+.tagline p {
+                font-size: 1.2em;
+                padding:0em;
+                margin: auto;
+    }
+
+.section3 {
+            width: 100%;
+            height: auto;
+            padding:2em;
+
+        }
+.meter {
         display: flex;
         flex-direction: row;
-        text-align: center;
-        padding: 0;
+        text-align:inherit;
+
+        padding: 2em;
     }
 
+    .food-menu1 li {
 
-    .food-menu1 {
-        width: 50%;
+        font-size: .9em;
+        letter-spacing: .1em;
+        font-family: 'Lato', sans-serif;
+        padding: 1.5em 8em ;
+        color: white;
+    }
+.food-menu1 {
+        width:50%;
         height: auto;
         list-style: none;
-
+        background-color:;
+        padding:1em 2em;
 
     }
-    .food-menu1 h1 {
+    .border1 {
+        width:70%;
+
+    }
+.food-menu1 h1 {
         padding: 0;
         font-size: 3em;
+        text-align: left;
     }
-    .food-menu1 p {
-        font-size: 1.2em;
+
+.food-menu1 p {
+        font-size: 1.5em;
         padding: 0;
         color: white;
     }
 
-    .food_menu_btn {
+.food_menu_btn {
         padding: 0em 35em 2em 35em;
     }
-    .food_menu_btn h1 {
+
+ .food_menu_btn h1 {
         padding: .4em;
         font-size: 1.5em;
 
     }
+.social i{
 
-
-    /*  Social Icon  */
-    .social{
-          position:fixed;
-          bottom:0;
-          left: 10%;
-          background-color:white;
-          width:auto;
-          height:auto;
-          z-index: 1000;
-          display: flex;
-         flex-direction: row;
-         justify-content: center;
-         padding:.2em .5em;
-    }
-
-
-    .social i{
         font-size: 1.5em;
-        padding:.5em;
-        color: black;
+        padding:.5em 1em;
+        color:white;
         transition: all 200ms ease-in;
     }
 
-    .social i:hover{
-      transform: scale(1.5);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* Footer Start */
     .footer {
-        padding: 10em 2em 2em 2em;
+      height: 100%;
+      padding: 2em 5em;
     }
     .footer-wrapper {
-
+        padding: 3em 0;
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
-
     }
     .footer-wrapper1 {
-        width: 300px;
+        width:300px;
     }
     .border {
-        width: 80%;
+        width:100%;
     }
-    .border1 {
-        width: 50%;
-
-    }
-    /* Footer End */
+   
