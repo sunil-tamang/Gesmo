@@ -1,20 +1,23 @@
 @media(min-width:48em) {
 
+  
     #triangle {
-        position: fixed;
-        top: 0%;
         left: 3%;
         width: 150px;
         height: 90px;
+        transition: all .4s ease-in-out;
 
     }
-
+    #triangle.sticky {
+        width: 150px;
+        height: 70px; 
+    }
     .header {
-        padding:1em;
-        height: 90px;
+        height: 80px;
         background-color: transparent;
-    }
 
+    }
+    
     .menu {
         display: none;
     }
@@ -25,19 +28,22 @@
     }
 
  .links-wrapper {
+        transition: all .4s ease-in-out;
         display: flex;
         justify-content:flex-end;
-        height: 90px;
+        height:auto;
         overflow: hidden;
         margin: auto;
         visibility: visible;
         list-style: none;
     }
+    .links-wrapper.sticky {
+      height: 70px;
+      background-color:rgb(236, 60, 21); 
+    }
 
-.links {
-
+.links  {
         padding: 2.5em 1.5em;
-        display: inline-block;
         text-decoration: none;
         color: white;
         font-weight: 900;
@@ -45,13 +51,13 @@
         font-family: 'Lato', sans-serif;
         font-variant: small-caps;
         letter-spacing: 3px;
-
+        transition: all .4s ease-in-out;
     }
+.links.sticky{
+    padding: 2em 1.5em;
+    font-size: .8em;
 
-.links:active, .links:visited {
-        color: blue;
-    }
-
+}
 .links::after {
         content: '';
         display: block;
@@ -69,44 +75,43 @@
 
 
 .section1 {
-        height: 80%;
+        height: 100%; 
+        padding: 4em;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-color: black;
     }
 
 .story_child1 {
         width: 100%;
-        height: 100%;
-        padding: 3em;
-
+        height: 70%;
+     
     }
+
 .circle-container {
-
         flex-direction: row;
-
-
     }
+
 .circle {
-        width: 230px;
-        height: 230px;
+        width: 200px;
+        height: 200px;
         text-align: center;
         margin: auto;
         padding: 2em;
         border-radius: 50%;
         text-align: center;
         background-color: #FAEBD7;
-
-
     }
 .circle-svg-icon {
-
         width: 5em;
         height: 5em;
     }
 .circle h1 {
-        font-size: 2em;
-    }
+        
+        font-size: 1.5em;
+
+        }
 
 .green {
         fill: rgb(38, 231, 14);
@@ -128,48 +133,46 @@
                 margin: auto;
     }
 
-.section3 {
+
+/* Food Menu */
+
+.food_menu {
             width: 100%;
             height: auto;
-            padding:2em;
+            padding:0em;
+
 
         }
-.meter {
+.food_menu_child_container {
         display: flex;
         flex-direction: row;
-        text-align:inherit;
+        justify-content: center;
+        background-color:black;
 
-        padding: 2em;
     }
+.food-menu1_list {
+            padding: 1em;
+            width:40%;
+            height: auto;
+            list-style: none;
 
-    .food-menu1 li {
-
+        }
+.food-menu1_list li {
         font-size: .9em;
         letter-spacing: .1em;
         font-family: 'Lato', sans-serif;
-        padding: 1.5em 8em ;
+        padding: 2em  ;
         color: white;
     }
-.food-menu1 {
-        width:50%;
-        height: auto;
-        list-style: none;
-        background-color:;
-        padding:1em 2em;
-
+.food-menu1_list li h1{
+        font-size: 2em;
     }
-    .border1 {
-        width:70%;
-
-    }
-.food-menu1 h1 {
-        padding: 0;
-        font-size: 3em;
-        text-align: left;
+.food-menu1_list li p{
+         font-weight: bold;
     }
 
-.food-menu1 p {
-        font-size: 1.5em;
+.food-menu1_list p {
+        font-size: 1.2em;
         padding: 0;
         color: white;
     }
@@ -178,11 +181,6 @@
         padding: 0em 35em 2em 35em;
     }
 
- .food_menu_btn h1 {
-        padding: .4em;
-        font-size: 1.5em;
-
-    }
 .social i{
 
         font-size: 1.5em;
@@ -191,11 +189,15 @@
         transition: all 200ms ease-in;
     }
 
-    /* Footer Start */
+
+
+/* Footer Start */
+
     .footer {
-      height: 100%;
-      padding: 2em 5em;
+          height: 100%;
+          padding: 2em 5em;
     }
+
     .footer-wrapper {
         padding: 3em 0;
         width: 100%;
@@ -204,10 +206,28 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
     .footer-wrapper1 {
         width:300px;
     }
-    .border {
+   
+
+.story {
+        height:60%;
+        display: flex;
+        padding:3em;
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+
+    .story_img , .story_img1 {
+        width:45%;
+        height: auto;
+    }
+.border1 {
+        width:95%;
+
+    }
+ .border {
         width:100%;
     }
-   

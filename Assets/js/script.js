@@ -1,3 +1,12 @@
+$(window).scroll(function() {
+if ($(this).scrollTop() > 100){
+    $('.links-wrapper,.links,#triangle').addClass("sticky");
+  }
+  else{
+    $('.links-wrapper,.links,#triangle').removeClass("sticky");
+  }
+});
+
 //sliding Menu content down
 
     $(document).ready(function(){

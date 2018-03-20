@@ -1,11 +1,22 @@
-
 @import url('https://fonts.googleapis.com/css?family=Lato:100');
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
 
+/* Reset css */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* base lauout */
+
+html, body{ height: 100%;  margin:0; box-sizing: border-box;  -webkit-box-sizing:border-box; -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;}
+a{ color: inherit; text-decoration: none;}
+a:hover{ text-decoration: none;}
+a:focus{ outline: 0;}
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.no-select{ -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 
 
-/* Common CSS */
+/*----- Header Style----*/
 
 .header {
 
@@ -159,17 +170,26 @@ svg polygon {
 }
 
 
-.banner {
+/* Banner */
+
+.index_banner {
 
     width: 100%;
-    height: 100%;
+    height: 130%;
     background-image: url('https://images.pexels.com/photos/574111/pexels-photo-574111.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: local;
+    background-size:cover;
+    background-position:center;
+
 }
 
+.banner{
+    width: 100%;
+     height:100%;
+       background-image: url('https://images.pexels.com/photos/5205/food-healthy-vegetables-potatoes.jpg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
+       background-size: cover;
+       background-attachment: local;
 
+}
 
 .banner1 {
 
@@ -221,10 +241,11 @@ svg polygon {
     margin: auto;
 }
 
+/*----SECTION1 ----*/
 
 .section1 {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: white;
     padding: 0em;
 }
@@ -266,10 +287,13 @@ svg polygon {
 }
 
 
+
+/* --- SECTION2---*/
+
 .section2 {
 
     width: 100%;
-    height: 100%;
+    height:80%;
     background-image: url('https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
     background-size: cover;
     background-position: center;
@@ -288,8 +312,8 @@ svg polygon {
 }
 
 .circle {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     text-align: center;
     margin: auto;
     padding: 1em;
@@ -303,7 +327,7 @@ svg polygon {
 .circle h1 {
     padding: 1em 0;
     color: black;
-    font-size: 1em;
+    font-size: .9em;
     font-family: 'Lato', sans-serif;
     font-kerning: normal;
     font-variant: small-caps;
@@ -312,8 +336,8 @@ svg polygon {
 
 .circle-svg-icon {
 
-    width: 4em;
-    height: 4em;
+    width: 2em;
+    height: 2em;
     color: white;
     fill: rgb(38, 231, 14);
     font-weight: 100;
@@ -335,29 +359,31 @@ svg polygon {
 }
 
 
-.section3 {
+/* FOOD-MENU SECTION */
+
+.food_menu {
     padding: 1.5em ;
     width: 100%;
-    height: auto;
+    height:100%;
     background-color: black;
 }
 
-.meter {
+.food_menu_child_container {
     display: flex;
     flex-direction: column;
 
 }
 
-.food-menu1 {
+.food-menu1_list {
     list-style: none;
 
 }
 
-.food-menu1 li {
+.food-menu1_list li {
 
     font-size: .9em;
     letter-spacing: .1em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 1.5em ;
     color: white;
 }
@@ -376,21 +402,12 @@ svg polygon {
 
 }
 
-.food-menu1 h1 {
-    font-size: 2em;
-    text-align: center;
-}
+
 
 .food_menu_btn {
     padding: 1em 4em;
 }
 
-.food_menu_btn h1 {
-    padding: 1em;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    background-color: white;
-}
 
 
 .about {
@@ -465,34 +482,6 @@ i {
 }
 
 
-
-
-.section4 {
-    width: 100%;
-    height: 100%;
-    background-color:black;
-}
-
-
-
-
-.section5 {
-    width: 100%;
-    height: 80%;
-    background-image: url('https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
-    background-size: cover;
-}
-
-
-
-.section6 {
-    width: 100%;
-    height: 70%;
-    background-color: black;
-}
-
-
-
 /* Desiging scroll Bar */
 
 ::-webkit-scrollbar {
@@ -538,7 +527,7 @@ i {
 
 
 
-
+/*---FOOTER SECTION---*/
 .footer {
     width: 100%;
     height: auto;
@@ -547,27 +536,6 @@ i {
 
 
 }
-
-.footer-wrapper {
-
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-
-}
-
-.footer-wrapper1 {
-    width: 100%;
-    height: 300px;
-    padding: 1.5em;
-    text-align: center;
-
-
-}
-
 .border {
     width: 80%;
     margin: auto;
@@ -581,23 +549,32 @@ i {
     border-top: 1px solid #595959;
 
 }
+.footer-wrapper {
 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-wrapper1 {
+    width: 100%;
+    height: 300px;
+    padding: 1.5em;
+    text-align: center;
+}
 .svg-icon {
     width: 50px;
     height: 40px;
     color: white;
     fill: white;
 }
-
-
-
 .footer-wrapper1 h1 {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     padding: 1em;
     color: white;
 }
-
 .footer-wrapper1 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -615,4 +592,72 @@ i {
 }
 
 
+/* MENU-BANNER---*/
+.menu_banner {
+
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/76093/pexels-photo-76093.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+.story {
+    width: 100%;
+    height: auto;
+    background-color:white;
+    padding: 0em;
+}
+
+
+.story_title {
+        width:100%;
+        height: 100%;
+        padding: 3em;
+
+    }
+ div h1 {
+    padding: .2em 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+
+}
+
+.story_title p {
+
+    font-family: 'Sacramento', cursive;
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+.story_img {
+    width: 100%;
+    height: 350px;
+    background-image: url('https://images.pexels.com/photos/248422/pexels-photo-248422.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+.story_img1 {
+    width: 100%;
+    height: 350px;
+    background-image: url('https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+
+
+.story_banner {
+
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/192933/pexels-photo-192933.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
 
