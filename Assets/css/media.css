@@ -1,23 +1,11 @@
 @media(min-width:48em) {
 
-  
-    #triangle {
-        left: 3%;
-        width: 150px;
-        height: 90px;
-        transition: all .4s ease-in-out;
 
-    }
-    #triangle.sticky {
-        width: 150px;
-        height: 70px; 
-    }
     .header {
         height: 80px;
         background-color: transparent;
 
-    }
-    
+}
     .menu {
         display: none;
     }
@@ -26,20 +14,32 @@
     .overlay-content {
         visibility: hidden;
     }
-
+.logo{
+    padding: 1.5em 1.5em;
+    position: absolute;
+    top:.5%;
+    left: 5%;
+    transition: all .4s ease-in-out;
+}
+.logo.sticky{
+    padding: .3em 1.5em;
+}
  .links-wrapper {
         transition: all .4s ease-in-out;
         display: flex;
         justify-content:flex-end;
+        padding-right: 5em;
         height:auto;
         overflow: hidden;
         margin: auto;
         visibility: visible;
         list-style: none;
+
     }
     .links-wrapper.sticky {
-      height: 70px;
-      background-color:rgb(236, 60, 21); 
+      height: 60px;
+      background-color:black;
+
     }
 
 .links  {
@@ -51,11 +51,12 @@
         font-family: 'Lato', sans-serif;
         font-variant: small-caps;
         letter-spacing: 3px;
-        transition: all .4s ease-in-out;
+        transition: all .5s ease-in-out;
     }
+
 .links.sticky{
-    padding: 2em 1.5em;
-    font-size: .8em;
+    padding: 1.5em 1.5em;
+    font-size: .9em;
 
 }
 .links::after {
@@ -75,18 +76,22 @@
 
 
 .section1 {
-        height: 100%; 
-        padding: 4em;
+        height:95%;
+        padding: 7em 2em  0 2em ;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: black;
+
     }
 
-.story_child1 {
+.story_child{
         width: 100%;
         height: 70%;
-     
+        padding: 2em;
+
+    }
+    .story_child_img {
+        width: 70%;
     }
 
 .circle-container {
@@ -94,36 +99,32 @@
     }
 
 .circle {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
         text-align: center;
         margin: auto;
-        padding: 2em;
+        padding: 3em;
         border-radius: 50%;
-        text-align: center;
         background-color: #FAEBD7;
     }
 .circle-svg-icon {
         width: 5em;
-        height: 5em;
+        height: 3em;
     }
 .circle h1 {
-        
-        font-size: 1.5em;
-
+            font-size: 1.5em;
         }
 
-.green {
-        fill: rgb(38, 231, 14);
+
+
+    .banner{
+           width: 100%;
+           height:150%;
     }
 
-
-
 .banner-tagline h2 {
-
-        font-size:4em;
+        font-size:5em;
         padding: .5em 0;
-
 
     }
 
@@ -131,28 +132,24 @@
                 font-size: 1.2em;
                 padding:0em;
                 margin: auto;
-    }
+}
 
 
 /* Food Menu */
 
 .food_menu {
             width: 100%;
-            height: auto;
-            padding:0em;
-
-
+            height:110%;
+            padding:2em;
         }
 .food_menu_child_container {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color:black;
-
     }
+
 .food-menu1_list {
-            padding: 1em;
-            width:40%;
+            width:100%;
             height: auto;
             list-style: none;
 
@@ -161,11 +158,14 @@
         font-size: .9em;
         letter-spacing: .1em;
         font-family: 'Lato', sans-serif;
-        padding: 2em  ;
+        padding: 2em  5em;
         color: white;
+        text-align: left;
     }
 .food-menu1_list li h1{
-        font-size: 2em;
+        font-size: 2em ;
+        padding: 0;
+        text-align: left;
     }
 .food-menu1_list li p{
          font-weight: bold;
@@ -210,12 +210,12 @@
     .footer-wrapper1 {
         width:300px;
     }
-   
+
 
 .story {
-        height:60%;
+        height:100%;
         display: flex;
-        padding:3em;
+        padding:2em;
         flex-direction: row;
         justify-content:flex-start;
     }
@@ -225,7 +225,7 @@
         height: auto;
     }
 .border1 {
-        width:95%;
+        width:80%;
 
     }
  .border {

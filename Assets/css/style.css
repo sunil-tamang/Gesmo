@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100');
-@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
 
 /* Reset css */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
@@ -30,27 +30,6 @@ a:focus{ outline: 0;}
 
 .links-wrapper {
     visibility: hidden;
-}
-
-#triangle {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 120px;
-    height: 70px;
-    list-style: none;
-    transform-origin: 50% 50%;
-}
-
-svg polygon {
-    stroke-dasharray: 17;
-    animation: dash 1.5s infinite;
-}
-
-@keyframes dash {
-    to {
-        stroke-dashoffset: 100;
-    }
 }
 
 .menu {
@@ -168,31 +147,14 @@ svg polygon {
     text-decoration: none;
     color: white;
 }
-
-
-/* Banner */
-
-.index_banner {
-
-    width: 100%;
-    height: 100%;
-    background-image: url('https://images.pexels.com/photos/574111/pexels-photo-574111.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
-    background-size:cover;
-    background-position:center;
-
+.logo{
+    padding: .5em 0em;
+    position: absolute;
+    top:2%;
+    left:2%;
+    transition: all .4s ease-in-out;
 }
-
-.banner{
-    width: 100%;
-     height:100%;
-       background-image: url('https://images.pexels.com/photos/5205/food-healthy-vegetables-potatoes.jpg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
-       background-size: cover;
-       background-attachment: local;
-
-}
-
 .banner1 {
-
     width: 100%;
     height: 100%;
     background-image: url('https://images.pexels.com/photos/76093/pexels-photo-76093.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
@@ -200,17 +162,22 @@ svg polygon {
     background-repeat: no-repeat;
     background-attachment: local;
 }
-
+.banner{
+       width: 100%;
+       height:auto;
+       background-image: url('https://images.pexels.com/photos/890507/pexels-photo-890507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+       background-size: cover;
+       background-attachment: local;
+}
 
 .banner-tagline {
     position: relative;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+    padding: 2em;
 
 }
-
-
 
 .tagline {
     position: absolute;
@@ -218,83 +185,46 @@ svg polygon {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size:1em;
+    width:100%;
+
+}
+ .taglined {
+
+    background-color: red;
+    color: white;
+
     font-family: 'Lato', sans-serif;
     font-kerning: normal;
     font-variant: small-caps;
+    text-align: center;
 
 
 }
+.taglined h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    padding: 2em  1em;
+}
+
 .banner-tagline h2 {
     font-family: 'Lato', sans-serif;
-    font-kerning: normal;
-    font-variant: small-caps;
-    font-weight: 900;
     font-size:3em;
-    margin: auto;
+    text-align: center;
 }
 
 .tagline p {
     font-size: 1em;
     word-spacing: .2em;
     padding:.2em;
-    margin: auto;
-}
-
-/*----SECTION1 ----*/
-
-.section1 {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    padding: 0em;
-}
-
-.story_child1 {
-    width: 100%;
-    height: auto;
-    padding: 1.5em;
-    text-align: center;
-    background-color: black;
-    color: white;
 
 }
-
-.story_child1 h1 {
-    padding: .5em;
-    font-family: 'Lato', sans-serif;
-    font-size: 2em;
-    font-weight: bolder;
-    font-kerning: normal;
-    font-variant: small-caps;
-
-}
-
-.story_child1 p {
-
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 1.5em;
-}
-
-.story_child_img {
-    width: 100%;
-    height: 350px;
-    background-image: url('https://cdn.artbees.net/jupiter/danae/wp-content/uploads/sites/170/2017/02/home-02.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: local;
-}
-
-
-
 /* --- SECTION2---*/
 
 .section2 {
 
     width: 100%;
     height:80%;
-    background-image: url('https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-image: url('https://images.pexels.com/photos/890507/pexels-photo-890507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     background-size: cover;
     background-position: center;
 }
@@ -305,29 +235,23 @@ svg polygon {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-40%, -50%);
 }
 
 .circle {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     text-align: center;
-    margin: auto;
-    padding: 1em;
+    align-self: center;
+    padding: 2em;
+    margin: 1em;
     border-radius: 50%;
     background-color: white;
-    text-align: center;
-
-
 }
 
 .circle h1 {
     padding: 1em 0;
     color: black;
-    font-size: .9em;
+    font-size: 1em;
     font-family: 'Lato', sans-serif;
     font-kerning: normal;
     font-variant: small-caps;
@@ -339,14 +263,11 @@ svg polygon {
     width: 2em;
     height: 2em;
     color: white;
-    fill: rgb(38, 231, 14);
+    fill: black;
     font-weight: 100;
 
 }
 
-.green {
-    fill: rgb(38, 231, 14);
-}
 
 .tagline1 {
     position: absolute;
@@ -358,11 +279,51 @@ svg polygon {
 
 }
 
+/*----story ----*/
+
+.story {
+    width: 100%;
+    height:auto;
+
+}
+
+.story_child {
+    width: 100%;
+    height: auto;
+
+    color:black;
+    margin: auto;
+
+
+}
+
+.story_child h1 {
+       padding: .5em;
+        text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+}
+
+.story_child p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.story_child_img {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://cdn.artbees.net/jupiter/danae/wp-content/uploads/sites/170/2017/02/home-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
 
 /* FOOD-MENU SECTION */
 
 .food_menu {
-    padding: 1.5em ;
+    padding: 1.5em;
     width: 100%;
     height:auto;
     background-color: black;
@@ -372,19 +333,25 @@ svg polygon {
     display: flex;
     flex-direction: column;
 
+
 }
 
 .food-menu1_list {
     list-style: none;
+}
+.border1 {
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid #595959;
 
 }
 
-.food-menu1_list li {
+.food-menu1_list li h1{text-align: center;}
 
-    font-size: .9em;
-    letter-spacing: .1em;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 1.5em ;
+.food-menu1_list li {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    padding: 1em 1.5em;
     color: white;
 }
 
@@ -410,50 +377,38 @@ svg polygon {
 
 
 
-.about {
+.B-A-N-N-E-R {
     background-color: black;
     width: 100%;
-    height: auto;
-    padding: 1em;
+    height:auto;
     display: flex;
     justify-content: center;
 }
 
 .slide-class {
     width: 100%;
-    height: auto;
+    height: 100%;
+
+}
+
+.text1, .text2, .text3 {
+    width: 100%;
+    height:660px;
     outline: none;
-    background-image: url('https://images.pexels.com/photos/574111/pexels-photo-574111.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: local;
-
 }
 
-.text1,
-.text2,
-.text3 {
-    width: 100%;
-    height: 400px;
-}
-
-/*
    .text1 {
-        background-image: url(img/5.jpeg);
-        background-position: center;
-        background-size: cover;
+       background-image: url('https://images.pexels.com/photos/890507/pexels-photo-890507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     }
     .text2 {
-        background-image: url(img/2.jpeg);
-        background-position: center;
-        background-size: cover;
+        background-image: url('https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     }
     .text3 {
-        background-image: url(img/3.jpeg);
-        background-position: center;
-        background-size: cover;
+        background-image: url('https://images.pexels.com/photos/372851/pexels-photo-372851.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     }
-*/
 
 i {
     color: white;
@@ -466,8 +421,7 @@ i {
     border: 0;
     outline: none;
     left: 10%;
-    top: 50%;
-    z-index: 3;
+    z-index:2;
     background-color: transparent;
 }
 
@@ -477,7 +431,7 @@ i {
     border: 0;
     outline: none;
     right: 10%;
-    z-index: 3;
+    z-index:2;
     background-color: transparent;
 }
 
@@ -543,12 +497,7 @@ i {
 
 }
 
-.border1 {
-    width: 100%;
-    margin: auto;
-    border-top: 1px solid #595959;
 
-}
 .footer-wrapper {
 
     width: 100%;
@@ -654,10 +603,9 @@ i {
 .story_banner {
 
     width: 100%;
-    height: 100%;
+    height: 130%;
     background-image: url('https://images.pexels.com/photos/192933/pexels-photo-192933.jpeg?w=940&h=650&auto=compress&cs=tinysrgb.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: local;
 }
-
