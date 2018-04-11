@@ -1,8 +1,3 @@
-$('.down_btn').click(function(){
-    $("html, body").animate({ scrollTop:  640}, 600);
-    return false;
- });
-
 $(window).scroll(function() {
 if ($(this).scrollTop() > 100){  $('.links-wrapper,.links,.logo').addClass("sticky");  }
   else{   $('.links-wrapper,.links,.logo').removeClass("sticky");  }
@@ -23,15 +18,12 @@ if ($(this).scrollTop() > 100){  $('.links-wrapper,.links,.logo').addClass("stic
     dots:false,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll:1,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed:2000,
-    speed:1500,
     responsive:true,
     loop:true,
     swipe:true,
-    // cssEase: 'cubic-bezier(0.600, 0.280, 0.235, 0.045)',
-     cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
     adaptiveHeight: false
@@ -39,39 +31,125 @@ if ($(this).scrollTop() > 100){  $('.links-wrapper,.links,.logo').addClass("stic
 });
 
 
-$(document).ready(function(){
-  $('.your-class').slick({
-      dots:true,
-      infinite: true,
-      slidesToShow:1,
-      slidesToScroll:1,
-      autoplay: true,
-      autoplaySpeed:1500,
-      speed:900,
-      responsive:true,
-      loop:true,
-      swipe:true,
-      adaptiveHeight: false
-  });
-});
-
-
-  // Parallax Effect
-
 if ($(window).width() > 650) {
 
-      var parallax = document.querySelectorAll(".parallax"),
+  // Parallax Effect
+  var parallax = document.querySelectorAll(".parallax"),
+      speed =0.8;
 
-          speed =0.8;
-      window.onscroll = function(){
+  window.onscroll = function(){
 
     [].slice.call(parallax).forEach(function(el,i){
 
       var windowYOffset = window.pageYOffset,
-
           elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
 
       el.style.backgroundPosition = elBackgrounPos;
+
     });
   };
+
 }
+else {
+
+}
+
+
+
+//
+// (function($) {
+//
+//     jQuery.scrollSpeed = function(step, speed, easing) {
+//
+//         var $document = $(document),
+//             $window = $(window),
+//             $body = $('html, body'),
+//             option = easing || 'default',
+//             root = 0,
+//             scroll = false,
+//             scrollY,
+//             scrollX,
+//             view;
+//
+//         if (window.navigator.msPointerEnabled)
+//
+//             return false;
+//
+//         $window.on('mousewheel DOMMouseScroll', function(e) {
+//
+//             var deltaY = e.originalEvent.wheelDeltaY,
+//                 detail = e.originalEvent.detail;
+//                 scrollY = $document.height() > $window.height();
+//                 scrollX = $document.width() > $window.width();
+//                 scroll = true;
+//
+//             if (scrollY) {
+//
+//                 view = $window.height();
+//
+//                 if (deltaY < 0 || detail > 0)
+//
+//                     root = (root + view) >= $document.height() ? root : root += step;
+//
+//                 if (deltaY > 0 || detail < 0)
+//
+//                     root = root <= 0 ? 0 : root -= step;
+//
+//                 $body.stop().animate({
+//
+//                     scrollTop: root
+//
+//                 }, speed, option, function() {
+//
+//                     scroll = false;
+//
+//                 });
+//             }
+//
+//             if (scrollX) {
+//
+//                 view = $window.width();
+//
+//                 if (deltaY < 0 || detail > 0)
+//
+//                     root = (root + view) >= $document.width() ? root : root += step;
+//
+//                 if (deltaY > 0 || detail < 0)
+//
+//                     root = root <= 0 ? 0 : root -= step;
+//
+//                 $body.stop().animate({
+//
+//                     scrollLeft: root
+//
+//                 }, speed, option, function() {
+//
+//                     scroll = false;
+//
+//                 });
+//             }
+//
+//             return false;
+//
+//         }).on('scroll', function() {
+//
+//             if (scrollY && !scroll) root = $window.scrollTop();
+//             if (scrollX && !scroll) root = $window.scrollLeft();
+//
+//         }).on('resize', function() {
+//
+//             if (scrollY && !scroll) view = $window.height();
+//             if (scrollX && !scroll) view = $window.width();
+//
+//         });
+//     };
+//
+//     jQuery.easing.default = function (x,t,b,c,d) {
+//
+//         return -c * ((t=t/d-1)*t*t*t - 1) + b;
+//     };
+//
+// })(jQuery);
+//
+// //Smoooth Mouse scroll
+// jQuery.scrollSpeed(100, 800);
