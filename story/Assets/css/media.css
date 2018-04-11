@@ -1,0 +1,147 @@
+@media(min-width:48em) {
+
+    #triangle {
+        position: fixed;
+        top: 0%;
+        left: 3%;
+        width: 150px;
+        height: 90px;
+         transition: all .4s ease-in-out;
+
+    }
+    #triangle.sticky {
+        width: 150px;
+        height: 70px;
+    }
+    .header {
+        padding:0em;
+        height: 80px;
+        height: auto;
+        background-color: transparent;
+
+    }
+    .links-wrapper.sticky {
+      height: 70px;
+      background-color:rgb(236, 60, 21);
+      font-size: .9em;
+    }
+    .menu {
+        display: none;
+    }
+
+    /*important */
+    .overlay-content {
+        visibility: hidden;
+    }
+
+ .links-wrapper {
+      transition: all .4s ease-in-out;
+        display: flex;
+        justify-content:flex-end;
+        height:auto;
+        overflow: hidden;
+        margin: auto;
+        visibility: visible;
+        list-style: none;
+    }
+
+.links  {
+
+        padding: 2.5em 1.5em;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-weight: 900;
+        font-size: .9em;
+        font-family: 'Lato', sans-serif;
+        font-variant: small-caps;
+        letter-spacing: 3px;
+
+    }
+
+.links::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        margin: .5em 0;
+        background: #A9A9A9;
+        transition: width .3s;
+    }
+
+.links:hover::after {
+        width: 100%;
+        transition: width .3s;
+    }
+
+
+.story{
+
+        height:60%;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+ .story1 {
+
+            height:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+        }
+    .story_title {
+            width:100%;
+            height: 100%;
+            padding: 3em;
+
+        }
+
+
+.banner-tagline h2 {
+
+        font-size:4em;
+        padding: .5em 0;
+
+
+    }
+
+.tagline p {
+                font-size: 1.2em;
+                padding:0em;
+                margin: auto;
+    }
+
+    .border1 {
+        width:95%;
+
+    }
+div  h1 {
+        padding: 0;
+        font-size: 3em;
+        text-align: left;
+    }
+
+.social i{
+
+        font-size: 1.5em;
+        padding:.5em 1em;
+        color:white;
+        transition: all 200ms ease-in;
+    }
+
+    /* Footer Start */
+
+    .footer-wrapper {
+        padding: 3em 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-wrapper_titles {
+        width:300px;
+    }
+    .border {
+        width:80%;
+    }
